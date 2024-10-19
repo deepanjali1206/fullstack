@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--% - in respect of parent
+      vw ,vh-viewport
+      em-parent(1em=font size of parent)
+      rem-root element(1rem=16px)
+      fraction-body-->
+    <style>
+        .container{
+            border:2px solid red;
+            height:25vh;
+            width: 50vw;
+            font-size: 10px;
+        }
+        .child{
+            border:3px solid green;
+            height: 50%;
+            width: 50%;
+            font-size: 4em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            hello world
+        </div>
+    </div>
+</body>
+</html>
