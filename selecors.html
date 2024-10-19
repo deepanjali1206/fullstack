@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--selectors-->
+    <!--descendent (space)--> 
+    <!--direct child(>)-->
+    <!--immediate sibling(+)-->
+    <!--general sibling(~)-->
+    <!--attribute selector([ ])   tag name[key="value"]-->
+    <!--Pseudo selector  1)Pseudo Class (States)->
+    i)link ii)visited iii)hover iv)active v)first child vi)last child vii)nth child(an+b)
+    2)Pseudo element (::) 1-first line 2-first letter 3-selection 4-after 5-before-->
+
+    <style>
+        p::first-line{
+            background-color: rgb(129, 129, 220);
+            color:black;
+        }
+        p::first-letter{
+            font-size: 40px;
+            color:rgb(12, 245, 109);
+        }
+        p::selection{
+            color:red;
+            background-color: yellow;
+        }
+        h1::before{
+            content:" deepa";
+            font-size: 30px;
+
+        }
+
+        h1::after{
+            content:" deepa";
+            font-size: 60px;
+            
+        }
+        div p{
+            color:blue;
+            background-color: aqua;
+        }
+        ul>li{
+           color:brown; 
+        }
+        p+a{
+            color: cadetblue;
+        }
+
+        li~li{
+            color:rgb(220, 20, 130);
+            background-color: rgba(23, 226, 159, 0.246);
+        }
+        h1+p{
+            color:darkolivegreen;
+
+        }
+
+        a:link{
+            text-decoration: none;
+            color:orange;
+        }
+        a:hover{
+            background-color: antiquewhite;
+            color: red;
+        }
+        a:visited{
+           color:blue;
+        }
+
+        ul li:first-child{
+            background-color: rgb(199, 99, 99);
+        }
+        ul li:last-child{
+            background-color: blueviolet;
+        } 
+        ul li:nth-child(2n+1){
+            background-color: rgb(11, 135, 229);
+        }
+    </style>
+
+    
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum, hic provident corporis quia eligendi fugiat. Delectus aperiam culpa, ipsa eaque laboriosam soluta vitae enim, tenetur error alias, repellat incidunt totam a iusto? Soluta esse ratione sint eaque voluptates nobis?</p>
+    <div>
+        <h1>Good Morning</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim?</p>
+        <h2>Selectors in css</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos reprehenderit nulla.</p>
+    </div>
+    <ul>
+        <li><p>inside list item</p></li>
+        <li>abc</li>
+        <li>def</li>
+        <li>ghi</li>
+        <li>jkl</li>
+        <p>outside list item</p>
+        <a>item</a>
+    </ul>
+    <a href="https://google.com">Google</a>
+    
+</body>
+</html>
