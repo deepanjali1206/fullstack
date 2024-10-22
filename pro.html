@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            border-style: double;
+
+            border:2px solid red;
+            height:30vh;
+            width:40vw;
+            margin-bottom: 30px;
+            margin-left: 80px;
+          /*  margin:60px 40px (top-bottom,left-right)*/
+            margin:60px 40px 50px /*(top,left-right,bottom)*/
+        }
+        .container1{
+            border:2px solid green;
+            height:30vh;
+            width:40vw;
+            margin: 50px;
+
+        }
+        .circle1{
+            border-radius: 50%;
+            border: 2px solid red;
+            height:300px;
+            width:300px;
+            padding: 20px;
+            background-color: red;
+        }
+        .circle2{
+
+            border-radius: 50%;
+            border: 2px solid blue;
+            height:30vh;
+            width:40vh;
+            margin: 2px;
+            background-color: blue;
+            
+        }
+        .circle3{
+        
+            border-radius: 50%;
+           
+            border: 2px solid green;
+            height:20vh;
+            width:30vh;
+            background-color: green;
+            padding:5px;
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="container1"></div>
+    <div class="circle1">
+        <div class="circle2">
+            <div class="circle3"></div>
+        </div>
+    </div>
+</body>
+</html>
